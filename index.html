@@ -17,12 +17,20 @@
     <main class="flex-row justify-center align-center col-auto p-4 bg-light">
         <section class="card card-rounded col-7 bg-white">
             <header class="card-header text-center">
-                <label class="form-label">Search Library of Congress:</label>
-                <input name="search" class="form-input" />
-                <button type="submit" class="btn">Search</button>
+                <form id="search-form">
+                    <label class="form-label" for="searchCongress">Search Library of Congress:</label><br>
+                    <input name="searchCongress" id="searchCongress" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
                 </div>
-            </header>
-            <script src="./assets/script.js"></script>
+
+                <div class="col-12 col-md-8">
+                    <h2 class="search results">Results: <span id="congress-search-term"></span></h2>
+                    <div id="search-container" class="list-group"></div>
+                </div>
+    </main>
+    </header>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
